@@ -1,0 +1,11 @@
+version: "3.6"
+services:
+  golangtemplate:
+    build: 
+      context: ./
+      args: 
+        APP_NAME: ${APP_NAME}
+    volumes: 
+      - ./app/src:/go/src/${APP_NAME}
+    env_file: 
+      - .env

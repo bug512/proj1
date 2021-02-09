@@ -1,3 +1,3 @@
-module golang-template
+module proj1
 
 go 1.14
